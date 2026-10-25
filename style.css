@@ -1,0 +1,178 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    color: #1e293b;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+
+    background: linear-gradient(
+        to right,
+        #064aea,
+        #7099e5,
+        #b6c7e3
+    );
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+    font-family: "Playwrite AR Guides", cursive;
+    font-size: 26px;
+    font-weight: 400;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 35px;
+}
+
+nav ul li a {
+    text-decoration: none;
+
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: color 0.3s ease;
+}
+
+
+nav ul li a:hover {
+    color: #64ffda;
+}
+
+
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        gap: 18px;
+        padding: 20px;
+    }
+
+    .logo {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    nav ul {
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+}
+
+body, nav, .logo, nav a {
+    transition: background-color 0.3s ease,
+                color 0.3s ease;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80vh;
+    padding: 40px 8%;
+    gap: 40px;
+    background: linear-gradient(135deg, white, #f3e8ff);
+}
+
+.home-text {
+    flex: 1;
+}
+
+.home-text h1 {
+    font-size: 42px;
+    color: #1e1b4b;
+}
+
+.home-text span {
+    color: #7c3aed;
+}
+
+.home-text h2 {
+    color: #6d28d9;
+    margin: 15px 0;
+}
+
+.home-text p {
+    color: #475569;
+    line-height: 1.8;
+}
+
+.home-photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.home-photo img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #ddd6fe;
+}
+
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .home-photo img {
+        width: 230px;
+        height: 230px;
+    }
+}
+
+#theme-toggle {
+    background: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+body.dark-mode {
+    background-color: #111827;
+    color: #f8fafc;
+}
+
+body.dark-mode nav {
+    background: #1e293b;
+}
+
+body.dark-mode nav a {
+    color: #f8fafc;
+}
+body.dark-mode #theme-toggle {
+    background: #334155;
+    color: white;
+    
+}

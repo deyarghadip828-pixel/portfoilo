@@ -1,0 +1,128 @@
+
+
+#skills {
+    padding: 90px 8%;
+    min-height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #ffffff 0%,
+        #f5f0ff 45%,
+        #e9d5ff 100%
+    );
+    color: #1e1b4b;
+}
+
+
+
+.skills-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.skills-tag {
+    display: inline-block;
+    background: #ede9fe;
+    color: #7c3aed;
+    padding: 8px 22px;
+    border-radius: 30px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.skills-heading h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.skills-heading h2 span {
+    color: #7c3aed;
+}
+
+.skills-heading p {
+    color: #64748b;
+    font-size: 16px;
+}
+
+
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1150px;
+    margin: auto;
+}
+
+
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    padding: 35px 25px;
+    border-radius: 20px;
+    border: 1px solid #e9d5ff;
+    box-shadow: 0 8px 25px rgba(109, 40, 217, 0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(109, 40, 217, 0.18);
+    border-color: #a78bfa;
+}
+
+
+
+.skill-icon {
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+
+.skill-card h3 {
+    color: #6d28d9;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.skill-card p {
+    color: #475569;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+
+@media (max-width: 900px) {
+    .skills-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+@media (max-width: 600px) {
+    #skills {
+        padding: 65px 5%;
+    }
+
+    .skills-heading h2 {
+        font-size: 32px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-card {
+        padding: 28px 20px;
+    }
+ #copyright {
+    text-align: center;
+    padding: 25px;
+    background: linear-gradient(135deg, #f5f0ff, #e9d5ff);
+    color: #6d28d9;
+    font-size: 14px;
+    font-weight: 500;
+}
+}
